@@ -1,4 +1,4 @@
-# SAMVAAD — Real-Time Indian Sign Language Communication System
+SAMVAAD — Real-Time Indian Sign Language Communication System
 
 **Bachelor of Engineering Capstone Project**  
 Department of Electronics and Telecommunication Engineering  
