@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#SAMVAAD — Real-Time Indian Sign Language Communication System
 
-## Getting Started
+**Bachelor of Engineering Capstone Project**  
+Department of Electronics and Telecommunication Engineering  
+Savitribai Phule Pune University
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Frontend: https://samvaad-ecru.vercel.app/  
+Backend: https://samvaad-3c3o.onrender.com/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Abstract
 
-## Learn More
+SAMVAAD is a real-time Indian Sign Language (ISL) communication system designed to bridge the communication gap between sign language users and non-sign language users. The system captures live video from a webcam, extracts hand landmarks using MediaPipe, processes the landmark sequence through a trained deep learning model, and converts the detected sign into text and speech output.
 
-To learn more about Next.js, take a look at the following resources:
+The project is implemented as a browser-based web application using Next.js, TypeScript, and Tailwind CSS for the frontend, with FastAPI and TensorFlow/Keras for backend inference. The recognition pipeline is designed to support continuous sign detection and stable transcript generation in real time. The system is intended as an accessible communication aid and a deployable capstone-level AI application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 1. Project Overview
 
-## Deploy on Vercel
+SAMVAAD is an AI-based assistive communication platform that recognizes Indian Sign Language gestures from a live camera feed and converts them into readable text. The application is designed for real-time interaction, with the goal of making communication smoother for deaf and mute users in practical day-to-day scenarios.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Unlike a simple gesture demo, this project focuses on the complete pipeline:
+- webcam capture,
+- landmark extraction,
+- temporal sign recognition,
+- transcript generation,
+- speech synthesis,
+- and deployable web-based interaction.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project demonstrates the use of computer vision, temporal deep learning, and full-stack web engineering in a real-world accessibility use case.
+
+---
+
+## 2. Problem Statement
+
+People who rely on sign language often face communication barriers when interacting with users unfamiliar with ISL. Conventional communication systems are either manual, slow, or not practical for real-time use. SAMVAAD addresses this problem by providing a real-time translation interface that can convert recognized signs into text and speech through a standard webcam and browser.
+
+---
+
+## 3. Objectives
+
+The main objectives of the project are:
+
+1. To capture live hand gestures using a webcam.
+2. To extract hand landmarks in real time using MediaPipe.
+3. To use a deep learning model for ISL sign classification.
+4. To generate readable transcript output from recognized signs.
+5. To produce speech output for the recognized text.
+6. To build a deployable, browser-based, accessibility-first application.
+7. To maintain a stable and practical user experience suitable for real communication.
+
+---
+
+## 4. System Architecture
+
+SAMVAAD follows a layered architecture:
+
+```text
+Webcam Input
+   ↓
+MediaPipe Hand Landmarker
+   ↓
+Landmark Feature Extraction
+   ↓
+Temporal Sequence Buffer
+   ↓
+TensorFlow/Keras Recognition Model
+   ↓
+Prediction and Confidence Scoring
+   ↓
+Transcript Engine
+   ↓
+Speech Synthesis
+   ↓
+User Interface Output
