@@ -1,8 +1,8 @@
-fastapi
-uvicorn
-tensorflow
-numpy
-pydantic
-python-multipart
-mediapipe
-opencv-python-headless
+fastapi==0.115.12
+uvicorn[standard]==0.34.3
+tensorflow==2.16.1
+numpy==1.26.4
+pydantic==2.11.7
+python-multipart==0.0.20
+mediapipe==0.10.21
+opencv-python-headless==4.10.0.84
