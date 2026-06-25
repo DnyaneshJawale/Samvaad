@@ -1,0 +1,67 @@
+                   precision    recall  f1-score   support
+
+             bear       1.00      1.00      1.00        12
+            break       1.00      1.00      1.00        12
+          brinjal       1.00      1.00      1.00        12
+           budget       1.00      1.00      1.00        12
+             busy       1.00      1.00      1.00        12
+          cabbage       1.00      1.00      1.00        12
+           carrot       1.00      1.00      1.00        12
+      cauliflower       1.00      1.00      1.00        12
+           chilli       1.00      1.00      1.00        12
+            clean       1.00      1.00      1.00        12
+            close       1.00      1.00      1.00        12
+             come       1.00      1.00      1.00        12
+             cook       1.00      1.00      1.00        12
+        crocodile       1.00      1.00      1.00        12
+              cry       1.00      1.00      1.00        12
+         cucumber       1.00      1.00      1.00        12
+             deer       1.00      1.00      1.00        12
+            drink       1.00      1.00      1.00        12
+         elephant       1.00      1.00      1.00        12
+             exam       1.00      1.00      1.00        12
+            fedup       1.00      1.00      1.00        12
+            fever       1.00      1.00      1.00        12
+          giraffe       1.00      1.00      1.00        12
+             give       1.00      1.00      1.00        12
+   good afternoon       1.00      1.00      1.00        12
+     good morning       1.00      1.00      1.00        12
+            hello       1.00      1.00      1.00        12
+              hug       1.00      1.00      1.00        12
+           injury       1.00      1.00      1.00        12
+        interview       1.00      1.00      1.00        12
+             jump       1.00      1.00      1.00        12
+        karnataka       1.00      1.00      1.00        12
+              key       1.00      1.00      1.00        12
+            knife       1.00      1.00      1.00        12
+            lemon       1.00      1.00      1.00        12
+             lion       1.00      1.00      1.00        12
+              man       1.00      1.00      1.00        12
+            maths       1.00      1.00      1.00        12
+            maybe       1.00      1.00      1.00        12
+           monkey       1.00      1.00      1.00        12
+            onion       1.00      1.00      1.00        12
+          peacock       1.00      1.00      1.00        12
+           pigeon       1.00      1.00      1.00        12
+             pour       1.00      1.00      1.00        12
+           radish       1.00      1.00      1.00        12
+          sparrow       1.00      1.00      1.00        12
+            still       1.00      1.00      1.00         6
+           switch       1.00      1.00      1.00        12
+              tea       1.00      1.00      1.00        12
+           temple       1.00      1.00      1.00        12
+        thank you       1.00      1.00      1.00        12
+            tiger       1.00      1.00      1.00        12
+           turtle       1.00      1.00      1.00        12
+         umbrella       1.00      1.00      1.00        12
+            uncle       1.00      1.00      1.00        12
+       vegetables       1.00      1.00      1.00        12
+          volcano       1.00      1.00      1.00        12
+what is your name       1.00      1.00      1.00        12
+             wife       1.00      1.00      1.00        12
+           writer       1.00      1.00      1.00        12
+            wrong       1.00      1.00      1.00        12
+
+         accuracy                           1.00       726
+        macro avg       1.00      1.00      1.00       726
+     weighted avg       1.00      1.00      1.00       726
