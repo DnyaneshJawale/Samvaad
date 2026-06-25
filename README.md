@@ -1,81 +1,196 @@
-SAMVAAD — Real-Time Indian Sign Language Communication System
+SAMVAAD – Real-Time Indian Sign Language Communication System
 
-**Bachelor of Engineering Capstone Project**  
-Department of Electronics and Telecommunication Engineering  
-Savitribai Phule Pune University
+**An AI-powered assistive communication platform that translates Indian Sign Language into text and speech in real time.**
 
 ---
 
-## Live Demo
+## Overview
 
-Frontend: https://samvaad-ecru.vercel.app/  
-Backend: https://samvaad-3c3o.onrender.com/
+SAMVAAD is a browser-based assistive communication system developed to help bridge the communication gap between individuals who use Indian Sign Language (ISL) and those unfamiliar with it.
 
----
-
-## Abstract
-
-SAMVAAD is a real-time Indian Sign Language (ISL) communication system designed to bridge the communication gap between sign language users and non-sign language users. The system captures live video from a webcam, extracts hand landmarks using MediaPipe, processes the landmark sequence through a trained deep learning model, and converts the detected sign into text and speech output.
-
-The project is implemented as a browser-based web application using Next.js, TypeScript, and Tailwind CSS for the frontend, with FastAPI and TensorFlow/Keras for backend inference. The recognition pipeline is designed to support continuous sign detection and stable transcript generation in real time. The system is intended as an accessible communication aid and a deployable capstone-level AI application.
+The application recognizes hand gestures through a standard webcam and converts recognized signs into readable text with optional speech output. The system is designed with accessibility, responsiveness, and real-time interaction as its primary goals.
 
 ---
 
-## 1. Project Overview
+## Key Features
 
-SAMVAAD is an AI-based assistive communication platform that recognizes Indian Sign Language gestures from a live camera feed and converts them into readable text. The application is designed for real-time interaction, with the goal of making communication smoother for deaf and mute users in practical day-to-day scenarios.
-
-Unlike a simple gesture demo, this project focuses on the complete pipeline:
-- webcam capture,
-- landmark extraction,
-- temporal sign recognition,
-- transcript generation,
-- speech synthesis,
-- and deployable web-based interaction.
-
-The project demonstrates the use of computer vision, temporal deep learning, and full-stack web engineering in a real-world accessibility use case.
+* Real-time Indian Sign Language recognition
+* Browser-based webcam interaction
+* Live transcript generation
+* Speech synthesis for recognized text
+* Responsive and accessibility-focused user interface
+* Real-time AI inference
+* Confidence-aware prediction pipeline
+* Modular full-stack architecture
+* Cloud-deployable application
 
 ---
 
-## 2. Problem Statement
+## Live Demonstration
 
-People who rely on sign language often face communication barriers when interacting with users unfamiliar with ISL. Conventional communication systems are either manual, slow, or not practical for real-time use. SAMVAAD addresses this problem by providing a real-time translation interface that can convert recognized signs into text and speech through a standard webcam and browser.
+**Application**
 
----
-
-## 3. Objectives
-
-The main objectives of the project are:
-
-1. To capture live hand gestures using a webcam.
-2. To extract hand landmarks in real time using MediaPipe.
-3. To use a deep learning model for ISL sign classification.
-4. To generate readable transcript output from recognized signs.
-5. To produce speech output for the recognized text.
-6. To build a deployable, browser-based, accessibility-first application.
-7. To maintain a stable and practical user experience suitable for real communication.
+https://samvaad-ecru.vercel.app/
 
 ---
 
-## 4. System Architecture
+## Technology Stack
 
-SAMVAAD follows a layered architecture:
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* FastAPI
+* Python
+
+### Artificial Intelligence
+
+* TensorFlow / Keras
+* MediaPipe
+* OpenCV
+* NumPy
+
+### Deployment
+
+* Vercel
+* Render
+* GitHub
+
+---
+
+## How It Works
+
+The system follows a real-time recognition pipeline:
+
+1. Capture live webcam frames.
+2. Detect hand landmarks.
+3. Process landmark sequences.
+4. Perform AI-based sign recognition.
+5. Generate transcript output.
+6. Convert recognized text into speech.
+
+This pipeline is optimized for responsive browser-based interaction while maintaining a smooth user experience.
+
+---
+
+## Project Highlights
+
+* Real-time gesture recognition
+* Continuous transcript generation
+* Browser-based interaction
+* AI-assisted communication support
+* Accessibility-oriented design
+* Scalable frontend-backend architecture
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/DnyaneshJawale/Samvaad.git
+
+cd Samvaad
+```
+
+### Install Dependencies
+
+Frontend
+
+```bash
+npm install
+```
+
+Backend
+
+```bash
+pip install -r requirements.txt
+```
+
+### Start the Application
+
+Frontend
+
+```bash
+npm run dev
+```
+
+Backend
+
+```bash
+uvicorn ai_server:app --reload
+```
+
+---
+
+## Project Structure
 
 ```text
-Webcam Input
-   ↓
-MediaPipe Hand Landmarker
-   ↓
-Landmark Feature Extraction
-   ↓
-Temporal Sequence Buffer
-   ↓
-TensorFlow/Keras Recognition Model
-   ↓
-Prediction and Confidence Scoring
-   ↓
-Transcript Engine
-   ↓
-Speech Synthesis
-   ↓
-User Interface Output
+SAMVAAD/
+├── app/
+├── components/
+├── lib/
+├── public/
+├── trained_model/
+├── ai_server.py
+├── package.json
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Objectives
+
+* Improve accessibility through AI-assisted communication.
+* Demonstrate real-time sign language recognition.
+* Build a scalable full-stack application.
+* Provide an intuitive communication interface.
+* Explore practical applications of computer vision and deep learning.
+
+---
+
+## Current Capabilities
+
+* Live webcam-based recognition
+* Real-time transcript generation
+* Speech output
+* Responsive interface
+* Browser-based operation
+* Cloud deployment
+
+---
+
+## Future Enhancements
+
+* Expanded vocabulary support
+* Improved sentence-level recognition
+* Enhanced multilingual capabilities
+* Mobile application support
+* Offline inference
+* Performance optimization
+* Improved accessibility features
+
+---
+
+## Academic Context
+
+This project was developed as part of a Bachelor of Engineering Capstone Project in Electronics and Telecommunication Engineering. It demonstrates the integration of computer vision, artificial intelligence, and modern web technologies to address a practical accessibility challenge.
+
+---
+
+## License
+
+This repository is provided for academic, educational, and demonstration purposes.
+
+---
+
+## Acknowledgements
+
+The development of SAMVAAD was inspired by the need for accessible communication technologies and the growing potential of artificial intelligence to create inclusive digital solutions.
